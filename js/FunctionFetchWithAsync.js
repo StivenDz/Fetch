@@ -1,6 +1,12 @@
-import { apiUrlGames } from './API.js';
-//RECOMENDED
+import { apiUrlGames,apiUrlGenres } from './API.js';
+// RECOMENDED
 // fetch in function with async
+
+/**
+ * 
+ * @param {string} apiUrl 
+ * @returns {array<object>}
+ */
 const executeAPI = async (apiUrl) => {
     let data;
 
@@ -11,7 +17,6 @@ const executeAPI = async (apiUrl) => {
 
 const games = await executeAPI(apiUrlGames);
 console.log(games);
-
 
 // adding data to html ----------------------
 const containerCards = document.getElementById('cardsContainer');

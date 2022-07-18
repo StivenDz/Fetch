@@ -1,12 +1,18 @@
 import { apiUrlGames } from './API.js';
 
 // fetch in function with async and then
+/**
+ * 
+ * @param {string} apiUrl 
+ * @returns {Promise<string | Response>}
+ */
+
 const executeAPI = async (apiUrl) => {
     let data;
 
     await fetch(apiUrl, { method: 'GET' })
         .then(async response => {
-           return data = await response.json();
+            data = await response.json();
         })
         .catch(err => data = 'error')
 
@@ -21,3 +27,6 @@ await executeAPI(apiUrlGames)
     })
     .catch(err => console.log(err))
 
+
+const data = await executeAPI(apiUrlGames);
+console.log(data);

@@ -1,4 +1,4 @@
-import  {apiUrlGames}   from './API.js';
+import { apiUrlGames } from './API.js';
 
 // without async
 
@@ -15,6 +15,26 @@ fetch(apiUrlGames)
     .catch(err => {
         console.log('error');
     })
-
-
 console.log(data, 'line 18');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
