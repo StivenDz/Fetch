@@ -16,25 +16,3 @@ fetch(apiUrlGames)
         console.log('error');
     })
 console.log(data, 'line 18');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
